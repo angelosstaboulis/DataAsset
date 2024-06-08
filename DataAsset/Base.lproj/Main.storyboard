@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DataAsset" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfy-fs-QI9">
+                                <rect key="frame" x="22" y="67" width="355" height="713"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JSON File" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bn7-Qt-SCt">
+                                        <rect key="frame" x="20" y="20" width="307" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="Sen-Z3-7gR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueY-cF-fT1">
+                                        <rect key="frame" x="30" y="125" width="305" height="467"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFn-D5-Tp6">
+                                        <rect key="frame" x="20" y="658" width="315" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="yB3-TX-5j4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Load JSON File"/>
+                                        <connections>
+                                            <action selector="btnJSONFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wL9-ha-FGg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ueY-cF-fT1" firstAttribute="trailing" secondItem="fFn-D5-Tp6" secondAttribute="trailing" id="4pF-w0-WU3"/>
+                                    <constraint firstItem="fFn-D5-Tp6" firstAttribute="centerX" secondItem="Tfy-fs-QI9" secondAttribute="centerX" id="8Yw-vH-iWS"/>
+                                    <constraint firstItem="fFn-D5-Tp6" firstAttribute="top" secondItem="ueY-cF-fT1" secondAttribute="bottom" constant="66" id="BMe-cR-6LH"/>
+                                    <constraint firstAttribute="bottom" secondItem="fFn-D5-Tp6" secondAttribute="bottom" constant="20" id="FsO-g4-o30"/>
+                                    <constraint firstItem="Bn7-Qt-SCt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fFn-D5-Tp6" secondAttribute="leading" id="IZP-XD-KGq"/>
+                                    <constraint firstItem="ueY-cF-fT1" firstAttribute="top" secondItem="Bn7-Qt-SCt" secondAttribute="bottom" constant="48" id="O75-MW-5Jg"/>
+                                    <constraint firstItem="Bn7-Qt-SCt" firstAttribute="leading" secondItem="Tfy-fs-QI9" secondAttribute="leading" constant="20" id="Sio-NO-74q"/>
+                                    <constraint firstItem="ueY-cF-fT1" firstAttribute="leading" secondItem="Tfy-fs-QI9" secondAttribute="leading" constant="30" id="Uib-wg-i22"/>
+                                    <constraint firstItem="Bn7-Qt-SCt" firstAttribute="top" secondItem="Tfy-fs-QI9" secondAttribute="top" constant="20" id="W9H-xG-2zm"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bn7-Qt-SCt" secondAttribute="trailing" constant="28" id="aDi-1U-pw9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tfy-fs-QI9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="8wi-Et-Dej"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tfy-fs-QI9" secondAttribute="bottom" constant="38" id="q42-wN-CTz"/>
+                            <constraint firstItem="Tfy-fs-QI9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="wKt-RW-jlI"/>
+                            <constraint firstItem="Tfy-fs-QI9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wbf-uo-gyh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblJSONFile" destination="ueY-cF-fT1" id="v3L-aS-2dS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-86.25954198473282" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
